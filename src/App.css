@@ -5,7 +5,25 @@
   display: flex;
   justify-content: space-between;
 }
-
+.header-right{
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 10px;
+}
+.header-right label{
+  display: block;
+  padding: 10px;
+  font-size: 17px;
+}
+.date{
+  width: 110px;
+  text-align: center;
+  padding: 10px 0px;
+  font-size: 17px;
+  /* border-radius: 5px; */
+  border: none;
+  border-bottom: 2px solid black;
+}
 .searchbox{
   width: 300px;
   padding: 10px;
