@@ -1,0 +1,89 @@
+.header {
+  width: 100%;
+  padding: 20px 5%;
+  /* background-color: gray; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.searchbox{
+  width: 300px;
+  padding: 10px;
+  font-size: 17px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+.daily-limit-reached-message {
+  background-color: #ff6b6b;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;
+}
+.news-articles {
+  width: 100%;
+  padding: 30px 5%;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 4%;
+  row-gap: 20px;
+}
+
+.breakingNews {
+  width: 22%;
+  padding: 20px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  border-radius: 5px;
+}
+
+.news-img{
+  width: 100%;
+  height: 200px;
+  /* background-color: blue; */
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.news-img img{
+  max-width: 100%;
+}
+.breakingNews h1{
+  font-weight: bold;
+  color: black;
+  font-size: 22px;
+}
+.desc-auth{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-between;
+}
+.desc-auth p a{
+  /* text-decoration: none; */
+  color: black;
+}
+.source{
+  color: gray;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 767px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header-right{
+    flex-direction: column;
+    align-items: center;
+  }
+  .searchbox{
+    width: 180px;
+    text-align: center;
+  }
+}
