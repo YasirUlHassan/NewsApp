@@ -29,7 +29,7 @@ function App() {
     if (requestCount < maxRequestsPerDay) {
       // Increment the request count
       setRequestCount(requestCount + 1);
-      fetch(`https://newsapi.org/v2/everything?q=${category}&${formattedDate}&apiKey=fb8b2d3ffb2a4dc9a89f77aebde9a14a`)
+      fetch(`https://newsapi.org/v2/everything?q=${category}&${formattedDate}&apiKey=f6c1649e74304d65a3a369a7bba759bf`)
       .then(response => {
         if (response.status === 429) {
           // Too Many Requests, implement backoff (e.g., wait for a few seconds before retrying)
@@ -48,7 +48,7 @@ function App() {
     } else {
       // Set the state to indicate that the daily limit is reached
       setDailyLimitReached(true);
-      console.warn('Daily request limit reached. You cannot make more requests.');
+      // console.warn('Daily request limit reached. You cannot make more requests.');
     }
   }, [category, selectedDate, requestCount])
 
