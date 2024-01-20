@@ -53,8 +53,8 @@ export default function HomePage() {
                             <h1>Latest articles about India</h1>
                         </section>
                         <div className="news-articles">
-                            {articles.map((article) => (
-                                <BreakingNews key={article.url} article={article} />
+                            {articles.map((article,index) => (
+                                <BreakingNews key={index} article={article} />
                             ))}
                         </div>
                     </>
