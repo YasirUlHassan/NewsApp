@@ -42,8 +42,10 @@ export default function HomePage() {
             </header>
 
             <section className="news">
-                {loading && <p>Loading...</p>}
-                {error && <p>Error: {error.message}</p>}
+                <div className="loading-error">
+                    {loading && <p>Loading...</p>}
+                    {error && <p>Error: {error.message}</p>}
+                </div>
                 {!loading && !error && articles.length === 0 && <h3>No News Found</h3>}
                 {!loading && !error && articles.length > 0 && (
                     <>
