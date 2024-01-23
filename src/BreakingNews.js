@@ -1,5 +1,5 @@
 export default function BreakingNews(props) {
-    console.log(props)
+    // console.log(props)
     return (
         <div className="breakingNews">
 
